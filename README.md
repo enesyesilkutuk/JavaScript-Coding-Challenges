@@ -1,1 +1,3 @@
 # JavaScript-Coding-Challenges
+
+In this repository; various coding challenges, some of which have algorithm-solving processes, have been solved and shared publicly...
