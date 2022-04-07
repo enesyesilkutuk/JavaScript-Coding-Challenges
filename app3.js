@@ -15,8 +15,7 @@ for (let i=0; i < count; i++){
 
     if ((i == 0) || (i == 1)) continue;
 
-    // fibonacci.push(fibonacci[i-2] + fibonacci[i-1]);
-    fibonacci[i] = fibonacci[i-2] + fibonacci[i-1];
+    fibonacci.push(fibonacci[i-2] + fibonacci[i-1]);
 
 }
 
@@ -50,3 +49,22 @@ for (let i=0; i < count2; i++){
 }
 
 console.log(fibonacci2);
+
+// Solution-3 :
+
+let count3 = +prompt("Enter a number");
+const fibonacci3 = [];
+
+for (let i=0; i < count3; i++){
+
+    while ((fibonacci3.length == 0) || (fibonacci3.length == 1)) {
+
+        fibonacci3.push(i);
+        i++;
+    }
+
+   fibonacci3[i] = fibonacci3[i-2] + fibonacci3[i-1];
+
+}
+
+console.log(fibonacci3);
