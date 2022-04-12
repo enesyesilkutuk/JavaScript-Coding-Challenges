@@ -68,3 +68,18 @@ for (let i=0; i < count3; i++){
 }
 
 console.log(fibonacci3);
+
+// Solution-4 :
+
+function fibonacci4(n){
+    let array = [1];
+    for (let i = 1; i < n; i++) {
+        if (i == 1) array.push(array[0]);
+        array.push(array[i-1] + array[i])
+    }
+    console.log(array);
+    return array[array.length-1];
+}
+
+let step = +prompt("Enter Fibonacci Step: ");
+console.log(`${step}. Fibonacci Number: ${fibonacci4(step-1)}`);
