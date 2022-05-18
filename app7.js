@@ -25,4 +25,23 @@ function miniMaxSum(arr) {
       return `${final[0]} ${final[final.length-1]}`
   }
 
-  console.log(miniMaxSum([1,3,5,7,9])); // returns 16 24 
+  console.log(miniMaxSum([1,3,5,7,9])); // returns 16 24
+  
+// Solution-2 :
+
+const findMinMax = arr => {
+  const newArr = arr.sort((a,b) => a-b);
+  const x = newArr.length;
+  let minSum = 0;
+  let maxSum = 0;
+  for (let i=1; i < x; i++){
+    maxSum += newArr[i];
+  }
+  for (let j=0; j < x-1; j++) {
+    minSum += newArr[j];
+  }
+
+  return String(minSum) + " " + String(maxSum)
+}
+
+console.log(findMinMax([1,3,5,7,9])) // returns 16 24
