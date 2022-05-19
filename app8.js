@@ -18,5 +18,10 @@ const noRepeat = (str) => {
   }
      return -1
   }
+<<<<<<< HEAD
 
   console.log(noRepeat("basketball")); // returns 's'
+=======
+  
+  console.log(noRepeat("mehmet"));
+>>>>>>> 125e1357acfdf8da89fb8416374151fbf08287ea
