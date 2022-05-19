@@ -18,5 +18,5 @@ const noRepeat = (str) => {
   }
      return -1
   }
-  
-  console.log(noRepeat("mehmet"));
+
+  console.log(noRepeat("basketball")); // returns 's'
