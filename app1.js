@@ -3,6 +3,8 @@
 let numberOne = +prompt("Enter first number:");
 let numberTwo = +prompt("Enter second number:");
 let operator = prompt("Enter a math operator:");
+const operators = ["+", "-", "*", "/"];
+let state = operators.includes(operator);
 let result;
 
 switch (operator){
@@ -33,12 +35,7 @@ console.log(result);
 
 // ------------------ Math Operator Question with Switch-Case Structure and While Loop ---------------
 
-let numberOne = +prompt("Enter first number:");
-let numberTwo = +prompt("Enter second number:");
-let operator = prompt("Enter a math operator:");
-const operators = ["+", "-", "*", "/"];
-let state = operators.includes(operator);
-let result;
+
 while ((isNaN(numberOne)) || (isNaN(numberTwo)) || (!state)) {
     console.log("Please enter valid inputs:");
     numberOne = +prompt("Enter a valid first number:");
@@ -71,7 +68,7 @@ console.log(`Result: ${result}`);
 
 // ------------------ Math Operator Question with Switch-Case Structure and Do-While Loop ---------------
 
-let firstNumber, secondNumber, operator, final;
+let firstNumber, secondNumber, operatorr, final;
 const set = ["+", "-", "*", "/"];
 
 do {
@@ -80,7 +77,7 @@ do {
     operator = prompt("Enter a math operator:");
 } while (!((Number.isSafeInteger(firstNumber)) & (Number.isSafeInteger(secondNumber)) & (set.indexOf(operator) !== -1)));
 
-switch (operator) {
+switch (operatorr) {
     case "+":
         final = firstNumber + secondNumber;
         break;
