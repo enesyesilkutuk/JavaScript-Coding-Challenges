@@ -21,3 +21,15 @@ function capitalize(str) {
 };
 
 console.log(capitalize("wasHİngTOn")); // returns Washington
+
+// Write a function that truncates the string given as a parameter according to the length given as a second parameter.
+
+function truncate(word, length) {
+    if ((word.constructor === String) && (length.constructor === Number) && (length > 0)) {
+        return word.slice(0,length);
+    }
+
+    else alert("please provide rigth data types")
+};
+
+console.log(truncate("liverpool", 3)); // returns liv
