@@ -1,4 +1,4 @@
-// Write a function that checks if the date given as a parameter is valid or not
+// Write a function that checks if the date given as a parameter is valid or not.
 
 function isDateValid(date) {
     return !Number.isNaN(new Date(date).valueOf());
@@ -29,7 +29,7 @@ function truncate(word, length) {
         return word.slice(0,length);
     }
 
-    else alert("please provide rigth data types")
+    else alert("please provide rigth data types");
 };
 
 console.log(truncate("liverpool", 3)); // returns liv
